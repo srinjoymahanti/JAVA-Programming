@@ -10,7 +10,9 @@ public class A_basics {
         System.out.println(Arrays.toString(numbers));
 
         int[] arr={2,3,4,5,6};
-        System.out.println(Arrays.toString(arr));
+        arr[0] += 1;
+        System.out.println(arr[0]);
+        //System.out.println(Arrays.toString(arr));
         System.out.println(arr.length);
     }
 }
