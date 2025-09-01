@@ -2,7 +2,7 @@ package _9_Arrays;
 import java.util.Scanner;
 public class D_searchNumberInArray {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             System.out.print("Enter the row:");
             int row=sc.nextInt();
             System.out.print("Enter the column:");
