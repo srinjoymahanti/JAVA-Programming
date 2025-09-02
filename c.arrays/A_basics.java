@@ -1,4 +1,4 @@
-package _9_Arrays;
+package c.arrays;
 import java.util.Arrays;
 
 public class A_basics {

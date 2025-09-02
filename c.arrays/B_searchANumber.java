@@ -1,8 +1,8 @@
-package _9_Arrays;
+package c.arrays;
 import java.util.Scanner;
 public class  B_searchANumber{
     public static void main(String[] args){
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
             System.out.print("Enter the size of array:");
             int size=sc.nextInt();
             int[] number=new int[size];
@@ -18,6 +18,4 @@ public class  B_searchANumber{
                 }
             }
         }
-    }
-    
 }
