@@ -1,4 +1,4 @@
-package _9_Arrays;
+package Arrays;
 import java.util.Scanner;
 public class D_searchNumberInArray {
     public static void main(String[] args){

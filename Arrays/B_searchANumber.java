@@ -1,4 +1,4 @@
-package c.arrays;
+package Arrays;
 import java.util.Scanner;
 public class  B_searchANumber{
     public static void main(String[] args){
@@ -17,5 +17,6 @@ public class  B_searchANumber{
                     System.out.print("The index of "+x+" is "+i);
                 }
             }
+            sc.close();
         }
 }
