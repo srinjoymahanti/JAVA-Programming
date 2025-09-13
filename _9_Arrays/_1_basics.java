@@ -1,7 +1,7 @@
 package _9_Arrays;
 import java.util.Arrays;
 
-public class A_basics {
+public class _1_basics {
     public static void main(String[] args){
         int[] numbers=new int [5];
         numbers[0]=1;

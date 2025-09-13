@@ -1,6 +1,6 @@
 package _9_Arrays;
 import java.util.*;
-public class F_maxFromArray {
+public class _6_maxFromArray {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
 

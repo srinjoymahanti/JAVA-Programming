@@ -2,7 +2,7 @@ package _13_ArrayList;
 
 import java.util.*;
 
-public class _4_reverseWithoutSecondArray {
+public class _9_reverseWithoutSecondArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array:");

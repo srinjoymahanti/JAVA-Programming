@@ -1,6 +1,6 @@
 package _9_Arrays;
 import java.util.*;
-public class E_linearSearch {
+public class _5_linearSearch {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array:");

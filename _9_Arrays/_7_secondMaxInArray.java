@@ -1,6 +1,6 @@
 package _9_Arrays;
 import java.util.*;
-public class G_secondMaxInArray {
+public class _7_secondMaxInArray {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array:");
