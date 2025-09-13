@@ -20,7 +20,7 @@ public class E_linearSearch {
                 break;
             }
         }
-        if(flag == true) System.out.println("Number found");
+        if(flag) System.out.println("Number found");
         else System.out.println("Number not found");
     }
     
