@@ -32,8 +32,8 @@ public class _1_basics {
         System.out.println(size);
 
         //loops
-        for(int i=0;i<list.size();i++){
-            System.out.print(list.get(i)+" ");
+        for (int ele : list) {
+            System.out.print(ele + " ");
         }
         System.out.println();
 
