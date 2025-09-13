@@ -1,4 +1,4 @@
-package Arrays;
+package _9_Arrays;
 import java.util.*;
 public class E_linearSearch {
     public static void main(String[] args){

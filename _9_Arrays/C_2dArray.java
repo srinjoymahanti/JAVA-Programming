@@ -1,4 +1,4 @@
-package Arrays;
+package _9_Arrays;
 import java.util.Scanner;
 public class C_2dArray {
     public static void main(String[] args){
