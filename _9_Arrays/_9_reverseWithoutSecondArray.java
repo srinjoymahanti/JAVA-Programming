@@ -1,4 +1,4 @@
-package _13_ArrayList;
+package _9_Arrays;
 
 import java.util.*;
 
@@ -21,6 +21,7 @@ public class _9_reverseWithoutSecondArray {
         }
         System.out.println("Reversed array is:");
         for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
         }
     }
 }
