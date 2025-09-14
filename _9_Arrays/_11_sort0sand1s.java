@@ -12,5 +12,8 @@ public class _11_sort0sand1s {
             if(i<noOfZeros) arr[i]=0;
             else arr[i]=1;
         }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
 }
