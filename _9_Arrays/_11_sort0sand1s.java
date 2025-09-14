@@ -11,6 +11,7 @@ public class _11_sort0sand1s {
         for(int i=0;i<noOfZeros-1;i++){
             arr[i]=0;
         }
+
         for(int i=noOfZeros;i<n;i++){
             arr[i]=1;
         }
