@@ -5,7 +5,6 @@ public class _11_sort0sand1s {
         int[] arr={0,0,0,1,0,1,1,1,0,1};
         int n=arr.length;
         int noOfZeros=0;
-
         for(int i=0;i<n;i++){
             if(arr[i]==0) noOfZeros++;
         }
