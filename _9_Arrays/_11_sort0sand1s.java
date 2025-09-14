@@ -8,14 +8,9 @@ public class _11_sort0sand1s {
         for(int i=0;i<n;i++){
             if(arr[i]==0) noOfZeros++;
         }
-        for(int i=0;i<noOfZeros-1;i++){
-            arr[i]=0;
-        }
-        for(int i=noOfZeros;i<n;i++){
-            arr[i]=1;
-        }
         for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
+            if(i<noOfZeros) arr[i]=0;
+            else arr[i]=1;
         }
     }
 }
