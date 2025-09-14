@@ -22,9 +22,8 @@ public class _11_sort0sand1s {
         int start=0,end=n-1;
         while(start<end){
             if(arr[start]==0) start++;
-            if(arr[end]==1) end--;
-            if (start<end) break;
-            if(arr[start]==1 && arr[end]==0){
+            else if(arr[end]==1) end--;
+            else if(arr[start]==1 && arr[end]==0){
                 arr[start]=0;
                 arr[end]=1;
                 start++;
