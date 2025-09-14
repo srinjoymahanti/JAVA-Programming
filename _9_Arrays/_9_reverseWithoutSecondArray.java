@@ -12,16 +12,29 @@ public class _9_reverseWithoutSecondArray {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.println();
-        for(int i=0;i<n/2;i++){
-            int j=n-1-i;
-            int temp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
+
+//        for(int i=0;i<n/2;i++){//Swap using for loop
+//            int j=n-1-i;
+//            int temp=arr[i];
+//            arr[i]=arr[j];
+//            arr[j]=temp;
+//        }
+
+        int x=0,y=n-1;//using while loop and method
+        while(x<=y){
+            swap(arr,x,y);
+            x++;
+            y--;
         }
+
         System.out.println("Reversed array is:");
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }
+    }
+    public static void swap(int[] array,int a,int b){
+        int temp=array[a];
+        array[a]=array[b];
+        array[b]=temp;
     }
 }
