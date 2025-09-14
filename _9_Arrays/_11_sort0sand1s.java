@@ -14,6 +14,7 @@ public class _11_sort0sand1s {
         for(int i=noOfZeros;i<n;i++){
             arr[i]=1;
         }
+
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }
