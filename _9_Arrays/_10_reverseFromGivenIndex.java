@@ -16,6 +16,5 @@ public class _10_reverseFromGivenIndex {
             arr[i]=sc.nextInt();
         }
 
-
     }
 }
