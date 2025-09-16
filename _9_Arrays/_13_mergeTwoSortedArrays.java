@@ -17,14 +17,14 @@ public class _13_mergeTwoSortedArrays {
             }
             k++;
         }
-        if(i==m){//Now take elements from b only
+        if(i==m){//Now take elements from brr only
             while(j<n){
                 crr[k]=brr[j];
                 j++;
                 k++;
             }
         }
-        if(j==n){//Now
+        if(j==n){//Now take elements from arr only
             while(i<m){
                 crr[k]=arr[i];
                 i++;
