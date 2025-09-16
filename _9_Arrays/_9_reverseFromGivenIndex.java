@@ -2,7 +2,7 @@ package _9_Arrays;
 
 import java.util.*;
 
-public class _10_reverseFromGivenIndex {
+public class _9_reverseFromGivenIndex {
     public static void reverse(int[] array,int a,int b){
         while(a<=b){
             int temp = array[a];

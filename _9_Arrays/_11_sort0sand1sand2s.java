@@ -1,6 +1,6 @@
 package _9_Arrays;
 
-public class _12_sort0sand1sand2s {
+public class _11_sort0sand1sand2s {
     public static void swap(int[] arr,int a,int b) {
         int temp=arr[b];
         arr[b]=arr[a];

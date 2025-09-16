@@ -1,6 +1,6 @@
 package _9_Arrays;
 
-public class _13_mergeTwoSortedArrays {
+public class _12_mergeTwoSortedArrays {
     public static void main(String[] args) {
         int[] arr={2,3,7,9},brr={1,5,6,8};
         int m=arr.length,n=brr.length;
