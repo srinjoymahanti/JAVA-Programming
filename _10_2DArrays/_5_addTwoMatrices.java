@@ -22,13 +22,13 @@ public class _5_addTwoMatrices {
         }
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                crr[i][j]=arr[i][j]+brr[i][j];
+                arr[i][j]+=brr[i][j];
             }
         }
         System.out.println("The final array is:");
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                System.out.print(crr[i][j]+" ");
+                System.out.print(arr[i][j]+" ");
             }
             System.out.println();
         }
