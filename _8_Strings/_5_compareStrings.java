@@ -1,5 +1,5 @@
 package _8_Strings;
-public class D_compareStrings {
+public class _5_compareStrings {
     public static void main(String[] args){
         String firstName="tony";
         String lastName="stark";
