@@ -9,5 +9,7 @@ public class _15_insertAndDelete {
         System.out.println(sb);
         sb.insert(2,'9');
         System.out.println(sb);
+        sb.insert(4,89);
+        System.out.println(sb);
     }
 }
