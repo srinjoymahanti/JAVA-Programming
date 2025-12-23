@@ -13,6 +13,6 @@ public class _16_reverse {
 //        }
 //        System.out.println(reverse);
 
-        System.out.println(sb.reverse());;
+        System.out.println(sb.reverse());//built-in function of reverse
     }
 }
