@@ -18,8 +18,9 @@ public class _7_selectionSortMethod2 {
             }
             swap(arr,maxIdx,n-1-i);
         }
-        for(int ele:arr){
-            System.out.print(ele+" ");
-        }
+//        for(int ele:arr){
+//            System.out.print(ele+" ");
+//        }
+        _5_SelectionSort.print(arr);
     }
 }
