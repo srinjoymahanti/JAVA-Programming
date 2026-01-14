@@ -3,6 +3,7 @@ package _14_BasicSorting;
 public class _9_transformArray {
     public static void main(String[] args) {
         int[] arr={12,67,34,89,57,25};
+        // Output   0  4  2  5  3  1
         _5_SelectionSort.print(arr);
         int n= arr.length;
 
