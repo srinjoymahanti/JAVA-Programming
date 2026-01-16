@@ -1,6 +1,6 @@
 package _15_BinarySearch;
 
-public class _4_firstAndLastElementOfArray {
+public class _4_firstAndLastIndexOfAnElementInArray {
     public static void main(String[] args) {
         int[] arr={10,10,10,20,20,20,20,20,30,30,40,40,40,40};
         int n=arr.length;
