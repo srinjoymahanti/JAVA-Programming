@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class _20_permutations {
     public static void printPermut(String ans,String str){
-        if(str.length()==0){
+        if(str.isEmpty()){
             System.out.println(ans);
             return;
         }
