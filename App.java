@@ -1,6 +1,9 @@
 public class App {
-    public static void main(String[] args) throws Exception {
-    System.out.println("Hello, World!");
-    System.out.println("This is a sample Java application.");
+    public static void main(String[] args){
+    String s="abcd";
+//        System.out.println(s+0);
+//        System.out.println(s);
+        System.out.println(s+=0);
+        System.out.println(s);
     }
 }
