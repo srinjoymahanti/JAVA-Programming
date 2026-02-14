@@ -10,7 +10,7 @@ public class _2_mergeSort {
     public static void merge(int[] a,int[] b,int[] c){
         int i=0,j=0,k=0;
         while(i<a.length && j<b.length){
-            if(a[i]<b[j]) c[k++] = a[i++];
+            if(a[i]<=b[j]) c[k++] = a[i++];
             else c[k++] = b[j++];
         }
         while(i<a.length) c[k++]=a[i++];
@@ -31,6 +31,8 @@ public class _2_mergeSort {
         mergeSort(b);
 
         merge(a,b,array);
+        //delete the arrays, just to improve time complexity
+        a=null;b=null;
     }
     public static void main(String[] args){
         int[] arr={19,78,23,69,45,59,37};
