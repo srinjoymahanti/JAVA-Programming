@@ -9,13 +9,15 @@ public class _4_quickSort {
         array[b]=temp;
     }
     public static int partition(int[] array,int lo,int hi){
-        int pivot=array[lo],pivotIdx=lo;
+        int mid=lo+(hi-lo)/2;
+        int pivot=array[mid],pivotIdx=mid;
         int smallerCount=0;
-        for (int i = lo+1; i <= hi; i++) {
+        for (int i = lo; i <= hi; i++) {
+            if(i==mid) continue;
             if(array[i]<pivot) smallerCount++;
         }
-        pivotIdx+=smallerCount;
-        swap(array,lo,pivotIdx);
+        pivotIdx=lo+smallerCount;
+        swap(array,mid,pivotIdx);
         int i=lo,j=hi;
         while(i<pivotIdx && j>pivotIdx){
             if(array[i]<=pivot) i++;
