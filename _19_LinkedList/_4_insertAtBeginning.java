@@ -1,4 +1,4 @@
-package LinkedList;
+package _19_LinkedList;
 
 public class _4_insertAtBeginning {
     public static class Node{
@@ -15,12 +15,12 @@ public class _4_insertAtBeginning {
         void InsertAtBeginning(int data){
             Node temp=new Node(data);
             if(head==null){
-                head=tail=temp;
+                tail=temp;
             }
             else{
                 temp.next=head;
-                head=temp;
             }
+            head=temp;
         }
 
         void display(){

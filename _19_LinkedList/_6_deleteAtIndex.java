@@ -1,4 +1,4 @@
-package LinkedList;
+package _19_LinkedList;
 
 public class _6_deleteAtIndex {
     public static class Node{

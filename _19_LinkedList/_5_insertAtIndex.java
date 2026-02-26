@@ -1,4 +1,4 @@
-package LinkedList;
+package _19_LinkedList;
 
 public class _5_insertAtIndex {
     public static class Node{

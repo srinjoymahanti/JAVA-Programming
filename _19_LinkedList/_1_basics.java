@@ -1,4 +1,4 @@
-package LinkedList;
+package _19_LinkedList;
 
 public class _1_basics {
     public static class Node{
