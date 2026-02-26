@@ -49,6 +49,24 @@ public class _6_deleteAtIndex {
             temp.next=t;
             size++;
         }
+        void deleteAtIndex(int idx){
+            if(idx<0 || idx>=size) {
+                System.out.println("wrong index");
+                return;
+            }
+            if(idx==0){
+                head=head.next;
+                size--;
+                return;
+            }
+            Node temp=head;
+            for (int i = 1; i <idx ; i++) {
+                temp=temp.next;
+            }
+            if(temp.next==tail) tail=temp;
+            temp.next=temp.next.next;
+            size--;
+        }
 
         void display(){
             Node temp=head;
@@ -56,6 +74,10 @@ public class _6_deleteAtIndex {
                 System.out.print(temp.data+" ");
                 temp=temp.next;
             }
+            System.out.println();
+        }
+        void size(){
+            System.out.println(size);
         }
     }
     public static void main(String[] args){
@@ -63,6 +85,12 @@ public class _6_deleteAtIndex {
         ll.InsertAtIndex(0,3 );
         ll.InsertAtIndex(1, 6);
         ll.InsertAtIndex(2, 8);
+        ll.InsertAtIndex(3, 12);
+        ll.InsertAtIndex(4, 7);
         ll.display();
+        ll.size();
+        ll.deleteAtIndex(3);
+        ll.display();
+        ll.size();
     } 
 }
