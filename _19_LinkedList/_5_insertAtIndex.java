@@ -37,26 +37,26 @@ public class _5_insertAtIndex {
             size++;
         }
 
-        void InsertAtIndex(int index,int data){
-            Node t=new Node(data);
-            Node temp=head;
-            if(index==size){
-                InsertAtEnd(data);
-                return;
-            }
-            else if(index==0){
+        void InsertAtIndex(int idx,int data){
+            Node temp=new Node(data);
+            Node x=head;
+            if(idx==0){
                 InsertAtBeginning(data);
                 return;
             }
-            else if(index<0 || index>size){
-                System.out.println("Wrong Input");
-                return ;
+            if(idx==size) {
+                InsertAtEnd(data);
+                return;
             }
-            for(int i=1;i<index;i++){
-                temp=temp.next;
+            if(idx<0 || idx>size){
+                System.out.println("invalid index");
+                return;
             }
-            t.next=temp.next;
-            temp.next=t;
+            for(int i=1;i<idx;i++){
+                x=x.next;
+            }
+            temp.next=x.next;
+            x.next=temp;
             size++;
         }
 
@@ -68,26 +68,30 @@ public class _5_insertAtIndex {
             }
         }
 
-        // int size(){
-        //     Node temp=head;
-        //     int count=0;
-        //     while(temp!=null){
-        //         count++;
-        //         temp=temp.next;
-        //     }
-        //     return count;
-        // }
+         void size(){
+             System.out.println("The length is:"+size);
+         }
 
-        void getAt(int index){
-            Node temp=head;
-            if(index<0 || index>size){
-                System.out.println("Wrong Input");
-                return;
+        void getAt(int idx) throws Error{
+            if(idx==size) System.out.println(tail.data);
+            if(idx<0 || idx>size){
+                throw new Error("index not valid");
             }
-            for(int i=1;i<=index;i++){
+            Node temp=head;
+            for (int i = 1; i <= idx; i++) {
                 temp=temp.next;
             }
             System.out.println(temp.data);
+        }
+        void setAt(int idx,int data) throws Error{
+            if(idx<0 || idx>size){
+                throw new Error("Invalid index");
+            }
+            Node temp=head;
+            for (int i = 1; i <= idx ; i++) {
+                temp=temp.next;
+            }
+            temp.data=data;
         }
     }
     public static void main(String[] args) {
@@ -101,9 +105,14 @@ public class _5_insertAtIndex {
         ll.InsertAtIndex(2, 9);
         ll.display();
         System.out.println();
-        System.out.println(ll.size);
+        ll.size();
+        ll.InsertAtIndex(9,5);
+        ll.display();
+        System.out.println();
+        ll.size();
         ll.getAt(3);
-        
+        ll.setAt(3,1);
+        ll.display();
     }
     
 }
