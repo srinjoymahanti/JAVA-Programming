@@ -5,7 +5,7 @@ public class _7_arrayImplementation {
         int[] arr=new int[5];
         int idx=0;
         void push(int val)throws Error{
-            if(isFull()) throw new Error("stack is full")
+            if(isFull()) throw new Error("stack is full");
             arr[idx]=val;
             idx++;
         }
