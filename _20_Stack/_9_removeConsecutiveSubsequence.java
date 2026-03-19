@@ -19,7 +19,7 @@ public class _9_removeConsecutiveSubsequence {
         }
         return res;
     }
-    public static void main(String[] args) {
+    public static void main(String[] xyz) {
         int[] arr={1,2,2,3,4,4,4,5,7,8,8,2};
         int[] res=remove(arr);
         for (int i = 0; i < res.length; i++) {
