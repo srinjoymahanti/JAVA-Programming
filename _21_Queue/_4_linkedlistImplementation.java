@@ -19,7 +19,6 @@ public class _4_linkedlistImplementation {
                 tail.next=temp;
             }
             tail=temp;
-            temp.next=null;
             size++;
         }
         public int remove() throws Error{
