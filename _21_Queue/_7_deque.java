@@ -3,7 +3,7 @@ package _21_Queue;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class _7_dequeue {
+public class _7_deque {
     public static void main(String[] args) {
         Deque dq=new LinkedList<>();
         dq.addLast(23);
