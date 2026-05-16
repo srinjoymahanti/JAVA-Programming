@@ -4,14 +4,27 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class _3_levelOrderTraversal {
+    public static class Pair{
+        Node node;
+        int level;
+        Pair(Node node,int level){
+            this.node=node;
+            this.level=level;
+        }
+    }
     public static void levelOrderTraversal(Node root){
-        Queue<Node> q=new LinkedList<>();
-        if(root!=null) q.add(root);
+        int prevLvl=0;
+        Queue<Pair> q=new LinkedList<>();
+        if(root!=null) q.add(new Pair(root,0));
         while(!q.isEmpty()){
-            Node front=q.remove();
-            System.out.print(front.val+" ");
-            if(front.left != null) q.add(front.left);
-            if(front.right != null) q.add(front.right);
+            Pair front=q.remove();
+            if(front.level!=prevLvl){
+                System.out.println();
+                prevLvl++;
+            }
+            System.out.print(front.node.val+" ");
+            if(front.node.left != null) q.add(new Pair(front.node.left, front.level+1));
+            if(front.node.right != null) q.add(new Pair(front.node.right,front.level+1));
         }
     }
     public static void main(String[] args){
